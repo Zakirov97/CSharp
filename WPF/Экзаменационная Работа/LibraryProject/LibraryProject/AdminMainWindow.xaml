@@ -1,0 +1,52 @@
+﻿<Window x:Class="LibraryProject.AdminMainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryProject"
+        mc:Ignorable="d"
+        Title="AdminMainWindow" Height="631" Width="838">
+    <Window.Resources>
+        <Style x:Key="ForButtonInAMM" TargetType="Button">
+            <Style.Setters>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="Background" Value="Red"/>
+                <Setter Property="BorderThickness" Value="0"/>
+            </Style.Setters>
+            <Style.Triggers>
+                <Trigger Property="Control.IsMouseOver" Value="True">
+                    <Setter Property="Control.Foreground" Value="Black"/>
+                    <Setter Property="Control.Background" Value="White"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid Height="50" VerticalAlignment="Top" Background="Red">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="269*"></ColumnDefinition>
+                <ColumnDefinition Width="52*"></ColumnDefinition>
+                <ColumnDefinition Width="50*"></ColumnDefinition>
+                <ColumnDefinition Width="53*"></ColumnDefinition>
+                <ColumnDefinition Width="73*"></ColumnDefinition>
+                <ColumnDefinition Width="50*"></ColumnDefinition>
+                <ColumnDefinition Width="60*"></ColumnDefinition>
+                <ColumnDefinition Width="131*"></ColumnDefinition>
+                <ColumnDefinition Width="92*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Foreground="White" FontSize="25" VerticalAlignment="Center" Height="42" Margin="0,4">Library Management</Label>
+            <Button Grid.Column="1" Style="{StaticResource ForButtonInAMM}" Height="24" Margin="0,13" x:Name="btnHome" Click="btnHome_Click">Home</Button>
+            <Button Grid.Column="2" Style="{StaticResource ForButtonInAMM}" Height="24" Margin="0,13" x:Name="btnBooks" Click="btnBooks_Click">Books</Button>
+            <Button Grid.Column="3" Style="{StaticResource ForButtonInAMM}" Height="24" Margin="0,13" x:Name="btnAssign" Click="btnAssign_Click">Assign</Button>
+            <Button Grid.Column="4" Style="{StaticResource ForButtonInAMM}" Height="24" Margin="0,13" x:Name="btnOverDue" Click="btnOverDue_Click">Over Due</Button>
+            <Button Grid.Column="5" Style="{StaticResource ForButtonInAMM}" Height="24" Margin="0,13" x:Name="btnUsers" Click="btnUsers_Click">Users</Button>
+            <Button Grid.Column="8" Style="{StaticResource ForButtonInAMM}" Height="24" Margin="0,13" x:Name="btnLogOut" Click="btnLogOut_Click">Log Out</Button>
+            <Label Foreground="White" FontSize="15" Grid.Column="7"
+                   VerticalAlignment="Center" Height="30" Margin="0,10">Welcome Admin</Label>
+        </Grid>
+        <Frame x:Name="AdminMainFrame"  NavigationUIVisibility="Hidden" Margin="0,50,0,0"></Frame>
+
+    </Grid>
+</Window>

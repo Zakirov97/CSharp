@@ -1,0 +1,6 @@
+c:\users\game\documents\visual studio 2015\Projects\IntroducingDelegates\IntroducingDelegates\bin\Debug\IntroducingDelegates.exe.config
+c:\users\game\documents\visual studio 2015\Projects\IntroducingDelegates\IntroducingDelegates\bin\Debug\IntroducingDelegates.exe
+c:\users\game\documents\visual studio 2015\Projects\IntroducingDelegates\IntroducingDelegates\bin\Debug\IntroducingDelegates.pdb
+c:\users\game\documents\visual studio 2015\Projects\IntroducingDelegates\IntroducingDelegates\obj\Debug\IntroducingDelegates.csprojResolveAssemblyReference.cache
+c:\users\game\documents\visual studio 2015\Projects\IntroducingDelegates\IntroducingDelegates\obj\Debug\IntroducingDelegates.exe
+c:\users\game\documents\visual studio 2015\Projects\IntroducingDelegates\IntroducingDelegates\obj\Debug\IntroducingDelegates.pdb

@@ -1,0 +1,22 @@
+﻿<Window x:Class="VIEW.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VIEW"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="1000">
+    <Grid>
+        <Menu>
+            <MenuItem Header="Equipment" x:Name="Equipment" Click="Equipment_Click"></MenuItem>
+
+            <MenuItem Header="Manufacturer" x:Name="Manufacturer" Click="Manufacturer_Click"></MenuItem>
+
+            <MenuItem Header="Model" x:Name="Model" Click="Model_Click"></MenuItem>
+        </Menu>
+        <Frame x:Name="MainFrame" Margin="0,30,0,0" VerticalAlignment="Top"></Frame>
+        
+        
+        
+    </Grid>
+</Window>

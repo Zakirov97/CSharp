@@ -1,0 +1,86 @@
+﻿<Window x:Class="Module1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Module1"
+        mc:Ignorable="d"
+        Title="Информация об интересном на habrahabr" Height="850" Width="450">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <ListBox Name="lbox" 
+                Grid.Row="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="12"
+                 MouseDoubleClick="lbox_MouseDoubleClick">
+        </ListBox>
+        <Label Grid.Row="1"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="16">
+            <TextBlock TextWrapping="Wrap"
+                       Name="labelDescription">
+                <ScrollViewer Name="scrl" ScrollViewer.VerticalScrollBarVisibility="Auto"></ScrollViewer>
+            </TextBlock>
+
+        </Label>
+        <Label Grid.Row="2"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="24"
+               Name="labelManagingEditor">
+        </Label>
+
+        <Label Grid.Row="3"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="24"
+               Name="labelGenerator"></Label>
+
+        <Label Grid.Row="4"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="24"
+               Name="labelPubdate"></Label>
+
+        <Label Grid.Row="5"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="24"
+               Name="link"></Label>
+
+        <Button Grid.Row="6"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="24"
+                Name="GetInformation"
+                Click="GetInformation_Click">Получить информацию</Button>
+        <Button Grid.Row="7"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="24"
+                Name="CreateXML"
+                
+                Click="CreateXML_Click">Создать XML</Button>
+
+        <TextBox Name="txtb" 
+                 Grid.Row="8"
+                 FontSize="24"
+                 Text="Место сохранения файла"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center"
+                 Height="40" Width="400"></TextBox>
+    </Grid>
+</Window>

@@ -1,0 +1,16 @@
+﻿<Window x:Class="WpfButtons.l"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfButtons"
+        mc:Ignorable="d"
+        Title="l" Height="350" Width="400">
+    <DockPanel LastChildFill="True">
+        <Button Width="70">LEFT</Button>
+        <Button VerticalAlignment ="Top" DockPanel.Dock="Top" Height="70">TOP</Button>
+        <Button DockPanel.Dock="Right" Width="70">RIGHT</Button>
+        <Button VerticalAlignment="Bottom" DockPanel.Dock="Bottom" Height="70">BOTTOM</Button>
+        <Button>CENTER</Button>
+    </DockPanel>
+</Window>

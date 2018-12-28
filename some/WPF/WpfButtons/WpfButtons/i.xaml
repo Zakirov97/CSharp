@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfButtons.i"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfButtons"
+        mc:Ignorable="d"
+        Title="i" Height="250" Width="450">
+    <Grid>
+        <Button Content="Button1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Button2" VerticalAlignment="Top" Margin="75,93,292,0"/>
+        <Button Content="Button3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="150,199,0,0"/>
+        <Button Content="Button4" VerticalAlignment="Top" Margin="225,199,142,0" Width="75"/>
+        <Button Content="Button5" VerticalAlignment="Top" Margin="289,93,72,0" Width="75"/>
+        <Button Content="Button6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="367,0,0,0"/>
+    </Grid>
+</Window>

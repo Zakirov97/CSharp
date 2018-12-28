@@ -1,0 +1,16 @@
+C:\Users\diasz\Desktop\MGG8\TestFileSystem\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\diasz\Desktop\MGG8\TestFileSystem\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\diasz\Desktop\MGG8\TestFileSystem\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\diasz\Desktop\MGG8\TestFileSystem\bin\Debug\TestFileSystem.dll
+C:\Users\diasz\Desktop\MGG8\TestFileSystem\bin\Debug\TestFileSystem.pdb
+C:\Users\diasz\Desktop\MGG8\TestFileSystem\bin\Debug\MGG8.FileSystem.dll
+C:\Users\diasz\Desktop\MGG8\TestFileSystem\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\diasz\Desktop\MGG8\TestFileSystem\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\diasz\Desktop\MGG8\TestFileSystem\bin\Debug\MGG8.FileSystem.pdb
+C:\Users\diasz\Desktop\MGG8\TestFileSystem\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\diasz\Desktop\MGG8\TestFileSystem\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\diasz\Desktop\MGG8\TestFileSystem\obj\Debug\TestFileSystem.csprojAssemblyReference.cache
+C:\Users\diasz\Desktop\MGG8\TestFileSystem\obj\Debug\TestFileSystem.csproj.CoreCompileInputs.cache
+C:\Users\diasz\Desktop\MGG8\TestFileSystem\obj\Debug\TestFileSystem.csproj.CopyComplete
+C:\Users\diasz\Desktop\MGG8\TestFileSystem\obj\Debug\TestFileSystem.dll
+C:\Users\diasz\Desktop\MGG8\TestFileSystem\obj\Debug\TestFileSystem.pdb

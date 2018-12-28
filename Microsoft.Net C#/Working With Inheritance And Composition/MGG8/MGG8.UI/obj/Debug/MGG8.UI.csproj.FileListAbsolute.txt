@@ -1,0 +1,10 @@
+C:\Users\diasz\Desktop\MGG8\MGG8.UI\bin\Debug\MGG8.UI.exe.config
+C:\Users\diasz\Desktop\MGG8\MGG8.UI\bin\Debug\MGG8.UI.exe
+C:\Users\diasz\Desktop\MGG8\MGG8.UI\bin\Debug\MGG8.UI.pdb
+C:\Users\diasz\Desktop\MGG8\MGG8.UI\bin\Debug\MGG8.FileSystem.dll
+C:\Users\diasz\Desktop\MGG8\MGG8.UI\bin\Debug\MGG8.FileSystem.pdb
+C:\Users\diasz\Desktop\MGG8\MGG8.UI\obj\Debug\MGG8.UI.csprojAssemblyReference.cache
+C:\Users\diasz\Desktop\MGG8\MGG8.UI\obj\Debug\MGG8.UI.csproj.CoreCompileInputs.cache
+C:\Users\diasz\Desktop\MGG8\MGG8.UI\obj\Debug\MGG8.UI.csproj.CopyComplete
+C:\Users\diasz\Desktop\MGG8\MGG8.UI\obj\Debug\MGG8.UI.exe
+C:\Users\diasz\Desktop\MGG8\MGG8.UI\obj\Debug\MGG8.UI.pdb

@@ -1,0 +1,4 @@
+c:\users\раимбаеви.itstep\documents\visual studio 2015\Projects\IntroToReflection\AnotherLibrary\bin\Debug\AnotherLibrary.dll
+c:\users\раимбаеви.itstep\documents\visual studio 2015\Projects\IntroToReflection\AnotherLibrary\bin\Debug\AnotherLibrary.pdb
+c:\users\раимбаеви.itstep\documents\visual studio 2015\Projects\IntroToReflection\AnotherLibrary\obj\Debug\AnotherLibrary.dll
+c:\users\раимбаеви.itstep\documents\visual studio 2015\Projects\IntroToReflection\AnotherLibrary\obj\Debug\AnotherLibrary.pdb

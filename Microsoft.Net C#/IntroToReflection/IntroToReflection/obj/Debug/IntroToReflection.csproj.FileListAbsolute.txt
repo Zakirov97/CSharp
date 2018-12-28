@@ -1,0 +1,5 @@
+c:\users\раимбаеви.itstep\documents\visual studio 2015\Projects\IntroToReflection\IntroToReflection\bin\Debug\IntroToReflection.exe.config
+c:\users\раимбаеви.itstep\documents\visual studio 2015\Projects\IntroToReflection\IntroToReflection\bin\Debug\IntroToReflection.exe
+c:\users\раимбаеви.itstep\documents\visual studio 2015\Projects\IntroToReflection\IntroToReflection\bin\Debug\IntroToReflection.pdb
+c:\users\раимбаеви.itstep\documents\visual studio 2015\Projects\IntroToReflection\IntroToReflection\obj\Debug\IntroToReflection.exe
+c:\users\раимбаеви.itstep\documents\visual studio 2015\Projects\IntroToReflection\IntroToReflection\obj\Debug\IntroToReflection.pdb

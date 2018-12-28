@@ -1,0 +1,27 @@
+﻿<Window x:Class="LibraryProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryProject"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="498" Width="830">
+    <Grid>
+        <Image Source="/Images/RegistrationImage.jpg"></Image>
+
+        <Border Background="#FF76BFD6" Height="30" Width="157" Margin="321.5,146,321.5,274">
+            <Label Foreground="DarkBlue" FontSize="16">Library Management</Label>
+        </Border>
+
+        <Border Height="30" Width="157" Margin="322,190,322,230" CornerRadius="3">
+            <TextBox Background="#FFF3F388" x:Name="AccountLogin" FontSize="20">admin</TextBox>
+        </Border>
+        <Border Height="30" Width="157" Margin="322,220,322,200" CornerRadius="3">
+            <PasswordBox Background="#FFF3F388" x:Name="AccountPassword" FontSize="20" Password="admin"></PasswordBox>
+        </Border>
+
+        <Button Height="30" Width="157" Foreground="White" Background="#FF2F77CD" 
+                Margin="322,255,321,165" FontSize="16" FontFamily="Century Gothic"
+                x:Name="ButtonSignIn" Click="ButtonSignIn_Click">Sign In</Button>
+    </Grid>
+</Window>

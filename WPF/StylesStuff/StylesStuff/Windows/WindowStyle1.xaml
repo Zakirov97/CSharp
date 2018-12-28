@@ -1,0 +1,102 @@
+﻿<Window x:Class="StylesStuff.Windows.WindowStyle1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StylesStuff.Windows"
+        mc:Ignorable="d"
+        Title="WindowStyle1" Height="370" Width="500">
+    <Window.Resources>
+        <Style x:Key="StFontFamily">
+            <Setter Property="Control.FontFamily" 
+                    Value="Bahnschrift SemiBold SemiConden"></Setter>
+        </Style>
+
+        <Style TargetType="Label"
+               x:Key="h2">
+            <Setter Property="Foreground" Value="Gray"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+            <Setter Property="FontSize" Value="16"></Setter>
+        </Style>
+        
+        <Style TargetType="Label"
+               x:Key="borderedLabel">
+            <Setter Property="Foreground" Value="Gray"></Setter>
+        </Style>
+          
+        <Style TargetType="Label"
+               x:Key="footerLabel">
+            <Setter Property="Foreground" Value="Gray"></Setter>
+            <Setter Property="Margin" Value="0,20,0,30"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+        </Style>
+
+        <Style TargetType="Label"
+               x:Key="h1">
+            <Setter Property="Foreground" Value="Black"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="FontFamily" Value="Bahnschrift SemiBold SemiConden"></Setter>
+        </Style>
+        
+        <Style TargetType="Border"
+               x:Key="borderS">
+            <Setter Property="BorderBrush" Value="DarkGray"></Setter>
+            <Setter Property="BorderThickness" Value="1"></Setter>
+            <Setter Property="CornerRadius" Value="3"></Setter>
+            <Setter Property="Padding" Value="10"></Setter>
+            <Setter Property="Margin" Value="0,0,5,5"></Setter>
+        </Style>
+
+    </Window.Resources>
+
+    <Border BorderThickness="0,0,0,1"
+            BorderBrush="Gray"
+            Margin="20">
+        <Border.Resources>
+            <Style
+                 BasedOn="{StaticResource StFontFamily}"
+                TargetType ="{x:Type Control}"
+               >
+            </Style>
+        </Border.Resources>
+        <StackPanel>
+            <Label Style="{StaticResource h2}">You need great interactive.</Label>
+            <Label Style="{StaticResource h1}">We work with briliant clients</Label>
+            <Grid Margin="0,30,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Border Grid.Column="0"
+                        Grid.Row="0" Style="{StaticResource borderS}">
+                    <Label Style="{StaticResource borderedLabel}">What's your name?*</Label>
+                </Border>
+
+                <Border Grid.Column="1"
+                        Grid.Row="0" Style="{StaticResource borderS}">
+
+                    <Label Style="{StaticResource borderedLabel}">What's the name of your business?</Label>
+                </Border>
+
+                <Border Grid.Column="0"
+                        Grid.Row="1"    Style="{StaticResource borderS}">
+                    <Label Style="{StaticResource borderedLabel}">What's your email address?*</Label>
+                </Border>
+
+                <Border Grid.Column="1"
+                        Grid.Row="1"  Style="{StaticResource borderS}">
+                    <Label Style="{StaticResource borderedLabel}">What's your phone number?</Label>
+                </Border>
+
+            </Grid>
+
+            <Label Style="{StaticResource footerLabel}">*Don't be shy. We gotta know.</Label>
+        </StackPanel> 
+    </Border>
+</Window>

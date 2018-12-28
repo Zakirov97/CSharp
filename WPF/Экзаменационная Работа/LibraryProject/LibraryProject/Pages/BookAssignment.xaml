@@ -1,0 +1,95 @@
+﻿<Page x:Class="LibraryProject.Pages.BookAssignment"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LibraryProject.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="BookAssignment">
+    <Page.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="TextWrapping" Value="Wrap"></Setter>
+            <Setter Property="Width" Value="200"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+            <Setter Property="VerticalAlignment" Value="Top"></Setter>
+            <Setter Property="Height" Value="35"></Setter>
+        </Style>
+
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="TextWrapping" Value="Wrap"></Setter>
+            <Setter Property="Width" Value="200"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="Width" Value="150"></Setter>
+            <Setter Property="Height" Value="35"></Setter>
+
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <Grid Height="300" VerticalAlignment="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.ColumnSpan="4" 
+                       HorizontalAlignment="Center" 
+                       VerticalAlignment="Center"
+                       FontSize="30"
+                       Background="LightBlue">Book Assignment</Label>
+
+            <Label Grid.Row="1" Grid.Column="0">Enter Book ID:</Label>
+
+            <Button Grid.Row="2" Grid.ColumnSpan="2" 
+                x:Name="BtnFindBook" Click="BtnFindBook_Click">Find Book</Button>
+
+            <Label Grid.Row="3" Grid.Column="0">Book Name:</Label>
+            <Label Grid.Row="4" Grid.Column="0">Book Quantity:</Label>
+            <Label Grid.Row="5" Grid.Column="0">Assigning Date</Label>
+
+            <TextBox Grid.Row="1" Grid.Column="1" x:Name="TxtBoxBookFind"></TextBox>
+            <TextBlock Grid.Row="3" Grid.Column="1" x:Name="TxtBoxBookName"></TextBlock>
+            <TextBlock Grid.Row="4" Grid.Column="1" x:Name="TxtBoxBookQuantity"></TextBlock>
+            <TextBlock Grid.Row="5" Grid.Column="1" x:Name="TxtBoxBookAssigningDate"></TextBlock>
+
+
+            <Label Grid.Row="1" Grid.Column="2">Enter Student ID:</Label>
+
+            <Button Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2"
+                x:Name="BtnFindStudent" Click="BtnFindStudent_Click">Find Student</Button>
+
+            <Label Grid.Row="3" Grid.Column="2">Student Name:</Label>
+            <Label Grid.Row="4" Grid.Column="2">Student Identification Number:</Label>
+            <Label Grid.Row="5" Grid.Column="2">Return Date</Label>
+
+            <TextBox Grid.Row="1" Grid.Column="3" x:Name="TxtBoxStudFind"></TextBox>
+            <TextBlock Grid.Row="3" Grid.Column="3" x:Name="TxtBoxStudName"></TextBlock>
+            <TextBlock Grid.Row="4" Grid.Column="3" x:Name="TxtBoxStudIIN"></TextBlock>
+            <TextBlock Grid.Row="5" Grid.Column="3" x:Name="TxtBoxReturnDate"></TextBlock>
+
+        </Grid>
+        <Button HorizontalAlignment="Center" Height="40" 
+                VerticalAlignment="Bottom" Margin="0,0,0,80"
+                x:Name="BTNAssignBook" Click="BTNAssignBook_Click">Assign Book</Button>
+    </Grid>
+</Page>

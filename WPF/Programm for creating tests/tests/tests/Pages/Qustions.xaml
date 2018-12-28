@@ -1,0 +1,29 @@
+﻿<Page x:Class="tests.Pages.Qustions"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:tests.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Qustions">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <ComboBox Margin="5" x:Name="cbSections" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" DisplayMemberPath="Name" SelectionChanged="cbSections_SelectionChanged"/>
+        <ComboBox Margin="5" x:Name="cbQuestions" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" DisplayMemberPath="QuestionContent" SelectionChanged="cbQuestions_SelectionChanged"/>
+
+        <Expander x:Name="expQuestion" Grid.Row="2" Grid.Column="0" IsEnabled="False">
+        </Expander>
+    </Grid>
+</Page>

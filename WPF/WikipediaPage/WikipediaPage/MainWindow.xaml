@@ -1,0 +1,923 @@
+﻿<Window x:Class="WikipediaPage.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WikipediaPage"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1900">
+    <Window.Resources>
+        <Style x:Key="unmarkeredList">
+            <Setter Property="Paragraph.FontFamily" Value="Arial"></Setter>
+            <Setter Property="Paragraph.FontSize" Value="12"></Setter>
+            <Setter Property="Paragraph.Foreground" Value="Blue"></Setter>
+        </Style>
+    </Window.Resources>
+    <ScrollViewer ScrollViewer.VerticalScrollBarVisibility="Auto">
+
+
+
+
+        <Grid ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="280"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0">
+                <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Wikipedia-logo-1.5million-v1.1-ru.svg/135px-Wikipedia-logo-1.5million-v1.1-ru.svg.png"
+                   Width="100"></Image>
+                <FlowDocumentScrollViewer Height="868" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                    <FlowDocument>
+                        <List MarkerStyle="None" Style="{StaticResource unmarkeredList}" 
+                          ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                            <ListItem>
+                                <Paragraph>Заглавная страница</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Рубрикация</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Указатель А — Я</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Избранные статьи</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Случайная статья</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Текущие события</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph></Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph></Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph Foreground="Black">Участие</Paragraph>
+                            </ListItem>
+
+
+
+                            <ListItem>
+                                <Paragraph>Сообщить об ошибке</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Сообщество</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Форум</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Свежие правки</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Новые страницы</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Справка</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Пожертвовать</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph></Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph></Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph Foreground="Black">Инструменты</Paragraph>
+                            </ListItem>
+
+
+                            <ListItem>
+                                <Paragraph>Ссылки сюда</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Связанные правки</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Спецстраницы</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Постоянная ссылка</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Сведения о странице</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph></Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph></Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph Foreground="Black">Печать/экспорт</Paragraph>
+                            </ListItem>
+
+
+
+                            <ListItem>
+                                <Paragraph>Создать книгу</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Скачать как PDF</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Версия для печати</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph></Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph></Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph Foreground="Black">В других проектах</Paragraph>
+                            </ListItem>
+
+
+
+                            <ListItem>
+                                <Paragraph>Викисклад</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>MediaWiki</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Мета-вики</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Викивиды</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Викиучебник</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Викиданные</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Викиновости</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Викицитатник</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Викитека</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Викиверситет</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Викигид</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Викисловарь</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Элемент Викиданных</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph></Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph></Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph Foreground="Black">На других языках</Paragraph>
+                            </ListItem>
+
+
+                            <ListItem>
+                                <Paragraph>العربية</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Azərbaycanca</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Башҡортса</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Беларуская</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Български</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Нохчийн</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Čeština</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Чӑвашла</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph FontWeight="Bold">Полный список</Paragraph>
+                            </ListItem>
+
+                        </List>
+                    </FlowDocument>
+                </FlowDocumentScrollViewer>
+            </StackPanel>
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="150"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackPanel HorizontalAlignment="Right" Orientation="Horizontal" Width="500">
+                    <Label Content="Вы не представились системе" ></Label>
+                    <Label Content="Обсуждение"></Label>
+                    <Label Content="Вклад" ></Label>
+                    <Label Content="Создать учётную запись" ></Label>
+                    <Label Content="Войти" ></Label>
+                </StackPanel>
+
+                <DockPanel Grid.Row="1">
+                    <Label Content="Заглавная" ></Label>
+                    <Label Content="Обсуждение"></Label>
+                    <StackPanel HorizontalAlignment="Right" Orientation="Horizontal" Width="218">
+                        <Label Content="Читать" ></Label>
+                        <Label Content="Просмотр кода"></Label>
+                        <Label Content="История" ></Label>
+                    </StackPanel>
+                </DockPanel>
+
+                <Border Grid.Row="2" BorderThickness="1"
+                    BorderBrush="Gray" >
+                    <!--<Border.Background>
+                        <ImageBrush ImageSource="C:\Users\diasz\Desktop\WikipediaPage\WikipediaPage\bin\Debug\Снимок.PNG" 
+                                Stretch="None">
+                        </ImageBrush>
+                    </Border.Background>-->
+                </Border>
+
+                <DockPanel Grid.Row="2" LastChildFill="True">
+                    <StackPanel DockPanel.Dock="Left" Margin="24,32,0,32">
+                        <Label Content="Добро пожаловать в Википедию," HorizontalAlignment="Left" FontSize="20"></Label>
+                        <Label Content="свободную энциклопедию, которую может редактировать каждый."></Label>
+                    </StackPanel>
+
+                    <StackPanel DockPanel.Dock="Right" HorizontalAlignment="Right" >
+                        <Label Content="Сейчас в Википедии 1 501 517 статей на русском языке. " 
+                           HorizontalAlignment="Left" 
+                           FontWeight="Bold" Margin="10" 
+                           FontSize="14"></Label>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,35" Width="269">
+                            <Label Content="Порталы"  FontWeight="Bold" Margin="10"></Label>
+                            <Label Content="Справка"  FontWeight="Bold" Margin="10"></Label>
+                            <Button Height="24">Создать статью</Button>
+
+                        </StackPanel>
+                    </StackPanel>
+
+
+                </DockPanel>
+
+                <WrapPanel Grid.Column="1" Grid.Row="3" Margin="10">
+                    <Border BorderThickness="1"
+                    BorderBrush="Gray"
+                    Height="865" Width="649"
+                        Padding="15" Margin="10"
+                        >
+                        <StackPanel>
+                            <Label>Избранная статья</Label>
+                            <Label FontSize="19" Foreground="Blue">Транскриптомные технологии</Label>
+                            <FlowDocumentScrollViewer VerticalScrollBarVisibility="Disabled">
+                                <FlowDocument >
+                                    <Paragraph>
+                                        <Floater Width="300" HorizontalAlignment="Right" >
+                                            <Paragraph Padding="3">
+                                                <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Transcriptomics_technique_publications_over_time-ru.svg/250px-Transcriptomics_technique_publications_over_time-ru.svg.png" 
+                                               HorizontalAlignment="Right" VerticalAlignment="Top" >
+                                                </Image>
+                                            </Paragraph>
+                                        </Floater>
+                                        Транскрипто́мные техноло́гии (англ. transcriptomics technologies) — методы, разработанные для изучения транскриптома (то есть совокупности всех РНК-транскриптов) организма. В состав транскриптома входят все транскрипты, которые присутствовали в клетке на момент выделения РНК[en]. Исследуя транскриптом, можно установить, какие клеточные процессы были активны в тот или иной момент времени.
+
+Первые попытки изучения транскриптома были предприняты в начале 1990-х годов. Благодаря развитию новых технологий в конце 1990-х транскриптомика стала важной биологической наукой. В настоящий момент в транскриптомике есть два основополагающих метода: микрочипы, позволяющие выявить наличие и количество определённых транскриптов, и секвенирование РНК (РНК-Seq), в котором используются методы секвенирования нового поколения для получения последовательностей всех транскриптов. С улучшением методик количество данных, получаемых в ходе одного транскриптомного эксперимента, увеличивалось. В связи с этим методы анализа данных также совершенствовались, чтобы обеспечить точный и эффективный анализ возрастающего объёма данных. Транскриптомные базы данных постоянно растут и становятся всё более полезными для исследователей. Это связано с тем, что правильная интерпретация данных, полученных в ходе транскриптомного эксперимента, практически невозможна без опоры на предшествующие исследования.
+
+Измерение уровня экспрессии определённых генов в клетках разных тканей и при разных условиях или же в разные моменты времени даёт информацию о регуляторных механизмах, связанных с экспрессией генов. С помощью этих данных могут быть определены функции ранее не аннотированных[en] генов. Анализ транскриптомов позволяет выявить различия в экспрессии определённых генов у разных организмов, что может быть особенно полезно для понимания молекулярных основ заболеваний человека.
+                                    </Paragraph>
+
+                                    <BlockUIContainer>
+                                        <StackPanel Orientation="Horizontal" Margin="5">
+                                            <Button Width="70" Content="Читать" HorizontalAlignment="Left">
+
+                                            </Button>
+                                            <Label Margin="5">Все 1150 избранных статей</Label>
+                                            <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/20px-OOjs_UI_icon_ellipsis.svg.png" Margin="230,0"></Image>
+                                        </StackPanel>
+                                    </BlockUIContainer>
+                                </FlowDocument>
+
+                            </FlowDocumentScrollViewer>
+                        </StackPanel>
+                    </Border>
+                    <Border BorderThickness="1"
+                    BorderBrush="Gray"
+                    Height="861" Width="629"
+                        Padding="15" Margin="10"
+                        >
+                        <StackPanel>
+                            <Label Content="Из новых материалов"/>
+                            <Label FontSize="19" Content="Знаете ли вы?"/>
+                            <FlowDocumentScrollViewer VerticalScrollBarVisibility="Disabled">
+                                <FlowDocument >
+                                    <Paragraph>
+                                        <Floater Width="200" HorizontalAlignment="Right" >
+                                            <Paragraph Padding="3">
+                                                <InlineUIContainer>
+                                                    <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Jacek_Malczewski_-_Polish_Hamlet_-_Google_Art_Project.jpg/110px-Jacek_Malczewski_-_Polish_Hamlet_-_Google_Art_Project.jpg" 
+                                                    HorizontalAlignment="Right" VerticalAlignment="Top" />
+                                                </InlineUIContainer>
+                                            </Paragraph>
+                                        </Floater>
+                                    </Paragraph>
+                                    <List>
+                                        <ListItem>
+                                            <Paragraph>
+                                                «Польский Гамлет» (на илл.) с титулом ордината Пиньчувского и ромашкой в руках делает выбор между старой и молодой Польшей.
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                Лучший бельгийский лётчик-истребитель Первой мировой проявил себя в атаках на германские аэростаты.
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                В гимне Галисии поётся о соснах.
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                Журнал отрицателей СПИДа закрылся в связи со смертью руководства редакции от вызванных им болезней.
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                В работе над фильмом о зомби-апокалипсисе в Квебеке режиссёр вдохновлялся творчеством Андрея Тарковского.
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                Жестокий гэбист с большим стажем политических репрессий подвизался промоутером цирка и варьете.
+                                            </Paragraph>
+                                        </ListItem>
+                                    </List>
+                                    <Paragraph>
+                                        <Floater Width="200" HorizontalAlignment="Right">
+                                            <Paragraph Padding="3">
+                                                <InlineUIContainer>
+                                                    <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Hyperbolic_triangle.svg/100px-Hyperbolic_triangle.svg.png" 
+                                                    HorizontalAlignment="Right" VerticalAlignment="Top" />
+                                                </InlineUIContainer>
+                                            </Paragraph>
+                                        </Floater>
+                                    </Paragraph>
+                                    <List>
+                                        <ListItem>
+                                            <Paragraph>
+                                                Гиперболический треугольник (на илл.), в отличие от евклидова, не всегда имеет описанную окружность.
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                В Тройственном союзе Австрия и Италия оказались партнёрами двойственными.
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                Завод General Motors в Барселоне выпускал бронированные автомобили по советскому образцу.
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                Курта с Кортни познакомил «Легенда!».
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                Феминистский ругательный термин предназначается порицателям сексуальности в поведении женщин.
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                Марагеновая сталь годится для производства фехтовального оружия, клюшек для гольфа и велосипедных рам.
+                                            </Paragraph>
+                                        </ListItem>
+                                    </List>
+
+                                    <BlockUIContainer>
+                                        <StackPanel Orientation="Horizontal" Margin="5">
+                                            <Button Width="80" Content="Обсудить" HorizontalAlignment="Left"/>
+                                            <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/20px-OOjs_UI_icon_ellipsis.svg.png" Margin="330,0"></Image>
+                                        </StackPanel>
+                                    </BlockUIContainer>
+                                </FlowDocument>
+
+                            </FlowDocumentScrollViewer>
+                        </StackPanel>
+                    </Border>
+                    <Border BorderThickness="1"
+                    BorderBrush="Gray"
+                    Height="459" Width="649"
+                        Padding="15" Margin="10"
+                        >
+                        <StackPanel>
+                            <Label>Хорошая статья</Label>
+                            <Label FontSize="19" Foreground="Blue">Вратарь</Label>
+                            <FlowDocumentScrollViewer VerticalScrollBarVisibility="Disabled">
+                                <FlowDocument >
+                                    <Paragraph>
+                                        «Вратарь» (укр. «Воротар») — картина советского художника Сергея Григорьева, созданная в 1949 году. Полотно, изображающее момент импровизированной футбольной игры с участием школьников, было удостоено Сталинской премии II степени в 1950 году. По мнению искусствоведов, оно является ярким произведением послевоенного соцреализма. Художник изобразил на полотне рядовой факт из повседневной жизни советских детей в послевоенном Киеве, но так, что он становится событием в жизни не только персонажей картины, но и её зрителей. Полотно находится в коллекции Государственной Третьяковской галереи и много раз было представлено на выставках в различных городах СССР и современной России, а также на выставках в Китае и США.
+
+Картина неоднократно была рекомендована методическими пособиями для использования учителями в советской и современной российской средней школе.</Paragraph>
+
+                                    <BlockUIContainer>
+                                        <StackPanel Orientation="Horizontal" Margin="5">
+                                            <Button Width="70" Content="Читать" HorizontalAlignment="Left">
+
+                                            </Button>
+                                            <Label Margin="5">Все 3200 хороших статей</Label>
+                                            <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/20px-OOjs_UI_icon_ellipsis.svg.png" Margin="230,0" ></Image>
+                                        </StackPanel>
+                                    </BlockUIContainer>
+                                </FlowDocument>
+
+                            </FlowDocumentScrollViewer>
+                        </StackPanel>
+                    </Border>
+                    <Border BorderThickness="1"
+                    BorderBrush="Gray"
+                    Height="506" Width="649"
+                        Padding="15" Margin="10">
+                        <StackPanel>
+                            <Label FontSize="19">Транскриптомные технологии</Label>
+                            <FlowDocumentScrollViewer VerticalScrollBarVisibility="Disabled">
+                                <FlowDocument >
+                                    <Paragraph>
+                                        <Floater Width="150" HorizontalAlignment="Right" >
+                                            <Paragraph Padding="3">
+                                                <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/JamalKahshoggi.png/130px-JamalKahshoggi.png" 
+                                               HorizontalAlignment="Right" VerticalAlignment="Top" >
+                                                </Image>
+                                            </Paragraph>
+                                        </Floater>
+                                        Актуальные темы III юношеские Олимпийские игры выборы в Бразилии выборы в Латвии чемпионат мира по волейболу среди
+                                    </Paragraph>
+                                    <List>
+                                        <ListItem>
+                                            <Paragraph>
+                                                В Русе убита журналистка Виктория Маринова; в Стамбуле пропал без вести (предположительно убит) журналист Джамал Хашогги (см. фото).
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                Лауреатами Нобелевской премии по экономике стали Вильям Нордхаус и Поль Ромер.
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                Авторская копия граффити Бэнкси «Девочка с воздушным шаром» самоунитожилась после продажи на аукционе Сотбис.
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                Женская и мужская сборные Китая заняли первые места на шахматной олимпиаде в Батуми.
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                Нобелевская премия мира присуждена Дени Муквеге и Наде Мурад за борьбу с сексуальным насилием.
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                Нобелевская премия по химии за 2018 год будет вручена Фрэнсис Арнольд за исследование направленной эволюции ферментов и Джорджу Смиту с Грегори Уинтером за фаговый дисплей пептидов и антител.
+                                            </Paragraph>
+                                        </ListItem>
+
+                                    </List>
+
+
+                                    <BlockUIContainer>
+                                        <StackPanel Orientation="Horizontal" Margin="5">
+                                            <Button Width="200" Content="Другие текущие события" HorizontalAlignment="Left"></Button>
+                                            <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/20px-OOjs_UI_icon_ellipsis.svg.png" Margin="330,0"></Image>
+                                        </StackPanel>
+                                    </BlockUIContainer>
+                                </FlowDocument>
+
+                            </FlowDocumentScrollViewer>
+                        </StackPanel>
+                    </Border>
+                    <Border BorderThickness="1"
+                    BorderBrush="Gray"
+                    Height="377" Width="649"
+                        Padding="15" Margin="10"
+                        >
+                        <StackPanel>
+                            <FlowDocumentScrollViewer VerticalScrollBarVisibility="Disabled">
+                                <FlowDocument >
+                                    <Paragraph>
+                                        <Floater Width="100" HorizontalAlignment="Left" >
+                                            <Paragraph Padding="3">
+                                                <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Hoopoe_taking_food_to_the_nest_%2819546723036%29.jpg/50px-Hoopoe_taking_food_to_the_nest_%2819546723036%29.jpg" 
+                                               HorizontalAlignment="Right" VerticalAlignment="Top" >
+                                                </Image>
+                                            </Paragraph>
+                                        </Floater>
+                                    </Paragraph>
+                                    <Paragraph>
+                                        Последний избранный список
+                                    </Paragraph>
+                                    <Paragraph Foreground="Blue" FontSize="18">
+                                        Список птиц, занесённых в Красную книгу Республики Башкортостан
+                                    </Paragraph>
+                                    <Paragraph></Paragraph>
+                                    <Paragraph>
+                                        <Floater Width="100" HorizontalAlignment="Left" >
+                                            <Paragraph Padding="3">
+                                                <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/RUSMARKA-2000.jpg/50px-RUSMARKA-2000.jpg"></Image>
+                                            </Paragraph>
+                                        </Floater>
+                                    </Paragraph>
+                                    <Paragraph>
+                                        Предыдущий избранный список
+                                    </Paragraph>
+                                    <Paragraph Foreground="Blue" FontSize="18">
+                                        Футбол на почтовых марках России</Paragraph>
+
+                                    <BlockUIContainer>
+                                        <StackPanel Orientation="Horizontal" Margin="5">
+                                            <Button Width="210" Content="Другие избранные списки" HorizontalAlignment="Left"></Button>
+                                            <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/20px-OOjs_UI_icon_ellipsis.svg.png" Margin="330,0"></Image>
+                                        </StackPanel>
+                                    </BlockUIContainer>
+                                </FlowDocument>
+
+                            </FlowDocumentScrollViewer>
+                        </StackPanel>
+                    </Border>
+                    <Border BorderThickness="1"
+                    BorderBrush="Gray"
+                    Height="484" Width="649"
+                        Padding="15" Margin="10"
+                        >
+                        <StackPanel>
+                            <Label>В этот день</Label>
+                            <Label FontSize="19" Foreground="Blue">9 октября</Label>
+                            <FlowDocumentScrollViewer VerticalScrollBarVisibility="Disabled">
+                                <FlowDocument >
+                                    <Paragraph>
+                                        <Floater Width="150" HorizontalAlignment="Right" >
+                                            <Paragraph Padding="3">
+                                                <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Gottlieb_Heinrich_Totleben.JPG/80px-Gottlieb_Heinrich_Totleben.JPG" 
+                                               HorizontalAlignment="Right" VerticalAlignment="Top" >
+                                                </Image>
+                                            </Paragraph>
+                                        </Floater>
+                                        Всемирный день почты, день независимости Уганды (1962)
+                                    </Paragraph>
+                                    <List>
+                                        <ListItem>
+                                            <Paragraph>
+                                                1708 — Великая Северная война: битва при Лесной.
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                1760 — Семилетняя война: взятие Берлина русским отрядом Тотлебена (на илл.).
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                1789 — во Франции запрещены пытки.
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                1874 — создан Всемирный почтовый союз.
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                1918 — Фридрих Карл Гессен-Кассельский избран королём Финляндии.
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                1926 — свадьба французских учёных Фредерика Жолио и Ирен Кюри.
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                1989 — на Центральном ТВ состоялся первый телесеанс Анатолия Кашпировского.
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                2006 — Северная Корея впервые в своей истории испытала ядерное оружие.
+                                            </Paragraph>
+                                        </ListItem>
+                                    </List>
+                                    <BlockUIContainer>
+                                        <StackPanel Orientation="Horizontal" Margin="5">
+                                            <Button Width="70" Content="Читать" HorizontalAlignment="Left">
+
+                                            </Button>
+
+                                            <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/20px-OOjs_UI_icon_ellipsis.svg.png" Margin="460,0"></Image>
+                                        </StackPanel>
+                                    </BlockUIContainer>
+                                </FlowDocument>
+
+                            </FlowDocumentScrollViewer>
+                        </StackPanel>
+                    </Border>
+                    <Border BorderThickness="1"
+                    BorderBrush="Gray"
+                    Height="529" Width="649"
+                        Padding="15" Margin="10"
+                        >
+                        <StackPanel Margin="0,0,0,4">
+                            <Label FontSize="19">Изображение дня</Label>
+                            <FlowDocumentScrollViewer VerticalScrollBarVisibility="Disabled" Height="547">
+                                <FlowDocument >
+                                    <Paragraph>
+                                        <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D0%BE%D0%B5_%D0%BE%D0%BA%D0%BE%D0%BD%D1%87%D0%B0%D0%BD%D0%B8%D0%B5_%D0%9D%D0%B8%D0%B6%D0%BD%D0%B5%D0%B3%D0%BE_%D0%A8%D0%B0%D0%B2%D0%BB%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BE%D0%B7%D0%B5%D1%80%D0%B0_%282%29.jpg/500px-%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D0%BE%D0%B5_%D0%BE%D0%BA%D0%BE%D0%BD%D1%87%D0%B0%D0%BD%D0%B8%D0%B5_%D0%9D%D0%B8%D0%B6%D0%BD%D0%B5%D0%B3%D0%BE_%D0%A8%D0%B0%D0%B2%D0%BB%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BE%D0%B7%D0%B5%D1%80%D0%B0_%282%29.jpg" 
+                                               HorizontalAlignment="Right" VerticalAlignment="Top" >
+                                        </Image>
+                                    </Paragraph>
+                                    <Paragraph>Нижнее Шавлинское озеро в Кош-Агачском районе республики Алтай</Paragraph>
+                                    <Paragraph>
+                                        <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/20px-OOjs_UI_icon_ellipsis.svg.png" 
+                                           ></Image>
+                                    </Paragraph>
+                                </FlowDocument>
+
+                            </FlowDocumentScrollViewer>
+                        </StackPanel>
+                    </Border>
+                    <Border BorderThickness="1"
+                    BorderBrush="Gray"
+                    Height="277" Width="649"
+                        Padding="15" Margin="10"
+                        >
+
+                        <StackPanel>
+                            <Label FontSize="19" >Совместная работа недели</Label>
+                            <FlowDocumentScrollViewer VerticalScrollBarVisibility="Disabled">
+                                <FlowDocument >
+                                    <Paragraph>
+                                        Приглашаем всех желающих принять участие в работе над статьями об экономике по регионам России, исламе в Азии, а также о работах Бэнкси.
+                                    </Paragraph>
+                                </FlowDocument>
+                            </FlowDocumentScrollViewer>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition ></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition Width="80"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Border BorderThickness="1"
+                                BorderBrush="Gray"
+                                Background="LightBlue">
+                                </Border>
+                                <Border BorderThickness="1"
+                                BorderBrush="Gray"
+                                Background="LightGreen" Grid.Row="1">
+                                </Border>
+                                <Border BorderThickness="1"
+                                BorderBrush="Gray"
+                                Background="LightBlue" Grid.Row="2">
+                                </Border>
+                                <Border BorderThickness="1"
+                                BorderBrush="Gray"
+                                Background="LightBlue" Grid.Row="0" Grid.Column="1">
+                                </Border>
+                                <Border BorderThickness="1"
+                                BorderBrush="Gray"
+                                Background="LightGreen" Grid.Row="1" Grid.Column="1">
+                                </Border>
+                                <Border BorderThickness="1"
+                                BorderBrush="Gray"
+                                Background="LightBlue" Grid.Row="2" Grid.Column="1">
+                                </Border>
+                                <Label Grid.Row="0" HorizontalAlignment="Center">Экономика по субъектам Российской Федерации</Label>
+                                <Label Grid.Row="1" HorizontalAlignment="Center">Страны Азии: Ислам</Label>
+                                <Label Grid.Row="2" HorizontalAlignment="Center">Бэнкси</Label>
+                                <Label Grid.Row="0" Grid.Column="1">[показать]</Label>
+                                <Label Grid.Row="1" Grid.Column="1">[показать]</Label>
+                                <Label Grid.Row="2" Grid.Column="1">[показать]</Label>
+
+                            </Grid>
+                            <FlowDocumentScrollViewer VerticalScrollBarVisibility="Disabled">
+                                <FlowDocument >
+                                    <BlockUIContainer>
+                                        <StackPanel Orientation="Horizontal" Margin="5">
+                                            <Label Margin="5">Примите также участие в</Label>
+                                            <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/22px-Flag_of_Argentina.svg.png"></Image>
+                                            <Label Foreground="Blue" FontSize="20">«III Аргентинской неделе»</Label>
+                                            <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/20px-OOjs_UI_icon_ellipsis.svg.png" Margin="30,0"></Image>
+                                        </StackPanel>
+                                    </BlockUIContainer>
+                                </FlowDocument>
+                            </FlowDocumentScrollViewer>
+                        </StackPanel>
+                    </Border>
+                </WrapPanel>
+                <Grid Grid.Column="1" Grid.Row="3" Margin="10" Width="1600" Height="350" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition Height="40"></RowDefinition>
+
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Wikimedia-logo_black.svg/48px-Wikimedia-logo_black.svg.png" Grid.ColumnSpan="4"></Image>
+                    <Label Grid.ColumnSpan="4" Grid.Row="1"
+                       HorizontalAlignment="Center">Википедия расположена на серверах Фонда Викимедиа — некоммерческой организации, также обеспечивающей работу ряда других проектов</Label>
+                    <Grid Grid.Row="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.RowSpan="2" Source="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Notification-icon-Wiktionary-logo.svg/48px-Notification-icon-Wiktionary-logo.svg.png" Width="50"></Image>
+                        <Label Grid.Row="0" Grid.Column="1" VerticalAlignment="Bottom" Foreground="Blue" FontSize="16">Викисловарь</Label>
+                        <Label Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" FontSize="14">Словарь</Label>
+                    </Grid>
+                    <Grid Grid.Row="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.RowSpan="2" Source="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Notification-icon-Wikiquote.svg/48px-Notification-icon-Wikiquote.svg.png" Width="50"></Image>
+                        <Label Grid.Row="0" Grid.Column="1" VerticalAlignment="Bottom" Foreground="Blue" FontSize="16">Викицитатник</Label>
+                        <Label Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" FontSize="14">Цитатник</Label>
+                    </Grid>
+                    <Grid Grid.Row="4">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.RowSpan="2" Source="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Notification-icon-Wikibooks-logo.svg/48px-Notification-icon-Wikibooks-logo.svg.png" Width="50"></Image>
+                        <Label Grid.Row="0" Grid.Column="1" VerticalAlignment="Bottom" Foreground="Blue" FontSize="16">Викиучебник</Label>
+                        <Label Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" FontSize="14">Учебники</Label>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.RowSpan="2" Source="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Notification-icon-Wikisource-logo.svg/48px-Notification-icon-Wikisource-logo.svg.png" Width="50"></Image>
+                        <Label Grid.Row="0" Grid.Column="1" VerticalAlignment="Bottom" Foreground="Blue" FontSize="16">Викитека</Label>
+                        <Label Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" FontSize="14">Библиотека текстов</Label>
+                    </Grid>
+                    <Grid Grid.Row="3" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.RowSpan="2" Source="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Notification-icon-Wikinews-logo.svg/48px-Notification-icon-Wikinews-logo.svg.png" Width="50"></Image>
+                        <Label Grid.Row="0" Grid.Column="1" VerticalAlignment="Bottom" Foreground="Blue" FontSize="16">Викиновости</Label>
+                        <Label Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" FontSize="14">Новости</Label>
+                    </Grid>
+                    <Grid Grid.Row="4" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.RowSpan="2" Source="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Notification-icon-Wikiversity-logo.svg/48px-Notification-icon-Wikiversity-logo.svg.png" Width="50"></Image>
+                        <Label Grid.Row="0" Grid.Column="1" VerticalAlignment="Bottom" Foreground="Blue" FontSize="16">Викиверситет</Label>
+                        <Label Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" FontSize="14">Обучающие материалы</Label>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.RowSpan="2" Source="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Notification-icon-Wikispecies-logo.svg/48px-Notification-icon-Wikispecies-logo.svg.png" Width="50"></Image>
+                        <Label Grid.Row="0" Grid.Column="1" VerticalAlignment="Bottom" Foreground="Blue" FontSize="16">Викивиды</Label>
+                        <Label Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" FontSize="14">Каталог биологических веществ</Label>
+                    </Grid>
+                    <Grid Grid.Row="3" Grid.Column="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.RowSpan="2" Source="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Notification-icon-MediaWiki-logo.svg/48px-Notification-icon-MediaWiki-logo.svg.png" Width="50"></Image>
+                        <Label Grid.Row="0" Grid.Column="1" VerticalAlignment="Bottom" Foreground="Blue" FontSize="16">Медиавики</Label>
+                        <Label Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" FontSize="14">Вики-движок</Label>
+                    </Grid>
+                    <Grid Grid.Row="4" Grid.Column="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.RowSpan="2" Source="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Notification-icon-Wikidata-logo.svg/48px-Notification-icon-Wikidata-logo.svg.png" Width="50"></Image>
+                        <Label Grid.Row="0" Grid.Column="1" VerticalAlignment="Bottom" Foreground="Blue" FontSize="16">Викиданные</Label>
+                        <Label Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" FontSize="14">База знаний</Label>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.RowSpan="2" Source="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Notification-icon-Commons-logo.svg/48px-Notification-icon-Commons-logo.svg.png" Width="50"></Image>
+                        <Label Grid.Row="0" Grid.Column="1" VerticalAlignment="Bottom" Foreground="Blue" FontSize="16">Викисклад</Label>
+                        <Label Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" FontSize="14">Хранилище медиафайлов</Label>
+                    </Grid>
+                    <Grid Grid.Row="3" Grid.Column="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.RowSpan="2" Source="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Notification-icon-Wikivoyage-logo.svg/48px-Notification-icon-Wikivoyage-logo.svg.png" Width="50"></Image>
+                        <Label Grid.Row="0" Grid.Column="1" VerticalAlignment="Bottom" Foreground="Blue" FontSize="16">Викигид</Label>
+                        <Label Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" FontSize="14">Путеводитель</Label>
+                    </Grid>
+                    <Grid Grid.Row="4" Grid.Column="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.RowSpan="2" Source="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Notification-icon-Meta-logo.svg/48px-Notification-icon-Meta-logo.svg.png" Width="50"></Image>
+                        <Label Grid.Row="0" Grid.Column="1" VerticalAlignment="Bottom" Foreground="Blue" FontSize="16">Мета-вики</Label>
+                        <Label Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" FontSize="14">Координация сообществ и документация</Label>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+
+
+</Window>

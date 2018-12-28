@@ -1,0 +1,6 @@
+C:\Users\diasz\Desktop\MGG8\MGG8.FileSystem\bin\Debug\MGG8.FileSystem.dll
+C:\Users\diasz\Desktop\MGG8\MGG8.FileSystem\bin\Debug\MGG8.FileSystem.pdb
+C:\Users\diasz\Desktop\MGG8\MGG8.FileSystem\obj\Debug\MGG8.FileSystem.csprojAssemblyReference.cache
+C:\Users\diasz\Desktop\MGG8\MGG8.FileSystem\obj\Debug\MGG8.FileSystem.csproj.CoreCompileInputs.cache
+C:\Users\diasz\Desktop\MGG8\MGG8.FileSystem\obj\Debug\MGG8.FileSystem.dll
+C:\Users\diasz\Desktop\MGG8\MGG8.FileSystem\obj\Debug\MGG8.FileSystem.pdb

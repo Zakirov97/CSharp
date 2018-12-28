@@ -1,0 +1,89 @@
+﻿<Window x:Class="StylesStuff.Windows.WindowStyle3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StylesStuff.Windows"
+        mc:Ignorable="d"
+        Title="WindowStyle3" Height="657" Width="657">
+    <Window.Resources>
+        <Style x:Key="FirstLabel" TargetType="Label">
+            <Setter Property="FontSize" Value="35"></Setter>
+            <Setter Property="FontFamily" Value="Curlz MT"></Setter>
+        </Style>
+
+        <Style x:Key="Paragraph" TargetType="Paragraph">
+            <Setter Property="FontSize" Value="13"></Setter>
+            <Setter Property="FontFamily" Value="Constantia"></Setter>
+        </Style>
+
+        <Style x:Key="SecondLabel" TargetType="Label">
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="FontFamily" Value="Arial Rounded MT Bold"></Setter>
+        </Style>
+
+        <Style x:Key="Borders" TargetType="Border">
+            <Setter Property="Background" Value="LightGray"></Setter>
+            <Setter Property="CornerRadius" Value="3"></Setter>
+            <Setter Property="Height" Value="35"></Setter>
+            <Setter Property="Width" Value="280"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+        </Style>
+
+        <Style x:Key="BorderButton" TargetType="Border">
+            <Setter Property="Background" Value="#E8554E"></Setter>
+            <Setter Property="CornerRadius" Value="3"></Setter>
+            <Setter Property="Height" Value="35"></Setter>
+            <Setter Property="Width" Value="150"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+        </Style>
+
+        <Style x:Key="ButtonLabel" TargetType="Label">
+            <Setter Property="FontSize" Value="16"></Setter>
+            <Setter Property="FontFamily" Value="Arial Black"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+        </Style>
+        
+    </Window.Resources>
+    <StackPanel>
+        <Label Margin="20" Style="{StaticResource FirstLabel}">Contact us</Label>
+        <FlowDocumentScrollViewer VerticalScrollBarVisibility="Disabled">
+            <FlowDocument>
+                <Paragraph Style="{StaticResource Paragraph}">
+                    We are here to answer any questions you may have about our combadi experiences. Reach out to us and we'll respond as soon as we can.
+                </Paragraph>
+                <Paragraph Style="{StaticResource Paragraph}">
+                    Even if there is something you ahve alwarys wanted to experience and can't find it on combadi, let us know and we promise we'll do our best to find it for you and send you there.</Paragraph>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+        <Grid Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Style="{StaticResource SecondLabel}" VerticalAlignment="Bottom">Name: *</Label>
+            <Label Grid.Row="0" Grid.Column="1" Style="{StaticResource SecondLabel}" VerticalAlignment="Bottom" Margin="20,0">Email: *</Label>
+            <Label Grid.Row="2" Grid.Column="0" Style="{StaticResource SecondLabel}" VerticalAlignment="Bottom">Message: *</Label>
+            <Label Grid.Row="4" Grid.Column="0" Style="{StaticResource SecondLabel}" VerticalAlignment="Bottom">How much is 4+6? *</Label>
+
+            <Border Grid.Row="1" Grid.Column="0" Style="{StaticResource Borders}"></Border>
+            <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource Borders}" Margin="0,0,6,0" HorizontalAlignment="Right"></Border>
+            <Border Grid.Row="3" Grid.ColumnSpan="2" Style="{StaticResource Borders}" Width="603" Height="100"></Border>
+            <Border Grid.Row="5" Grid.Column="0" Style="{StaticResource Borders}"></Border>
+
+            <Border Grid.Row="6" Grid.Column="1" Style="{StaticResource BorderButton}" Margin="135,0,0,0">
+                <Label HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource ButtonLabel}">SEND</Label>
+            </Border>
+
+        </Grid>
+    </StackPanel>
+</Window>

@@ -1,0 +1,49 @@
+﻿<Page x:Class="VIEW.Pages.CreateManufacturer"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:VIEW.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CreateManufacturer">
+
+    <Grid>
+
+        <ScrollViewer VerticalScrollBarVisibility="Visible"
+                  Height="200" VerticalAlignment="Top">
+            <StackPanel>
+                <ListView x:Name="lvManuf" SelectionChanged="lvManuf_SelectionChanged">
+                    <ListView.View>
+                        <GridView>
+                            <GridView.Columns>
+                                <GridViewColumn Header="intManufacturerID" 
+                                                DisplayMemberBinding="{Binding Path=intManufacturerID}"/>
+                                <GridViewColumn Header="strManufacturerChecklistId"
+                                                DisplayMemberBinding="{Binding Path=strManufacturerChecklistId}"/>
+                                <GridViewColumn Header="strName"
+                                                DisplayMemberBinding="{Binding Path=strName}"/>
+                            </GridView.Columns>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </StackPanel>
+        </ScrollViewer>
+
+        <StackPanel Orientation="Horizontal" Height="100">
+            <TextBlock Width = "100" Height="30" x:Name="intManufacturerID"></TextBlock>
+            <TextBox Width = "100" Height="30" x:Name="strManufacturerChecklistId"
+                    ></TextBox>
+            <TextBox Width = "100" Height="30" x:Name="strName"></TextBox>
+        </StackPanel>
+        <Button Height="40" Width="150" Content="Создать" FontSize="20" 
+                x:Name="btnCreate" 
+                Click="btnCreate_Click" Margin="40,275,610,135" RenderTransformOrigin="0.499,0.878"></Button>
+        <Button Height="40" Width="150" Content="Удалить" FontSize="20" 
+                 x:Name="btnDelete" 
+                Click="btnDelete_Click" Margin="350,275,300,135"></Button>
+        <Button Height="40" Width="150" Content="Обновить" FontSize="20" 
+                 x:Name="btnUpdate" 
+                Click="btnUpdate_Click" Margin="195,275,455,135"></Button>
+    </Grid>
+</Page>

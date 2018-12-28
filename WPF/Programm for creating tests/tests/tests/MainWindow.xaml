@@ -1,0 +1,31 @@
+﻿<Window x:Class="tests.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tests"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0">
+            <MenuItem Header="Администрирование">
+                <MenuItem x:Name ="addSection" 
+                          Click ="addSection_Click"
+                          Header="Добавить раздел"></MenuItem>
+                <MenuItem Header="Список разделов" 
+                          x:Name ="SecList" Click="SecList_Click"></MenuItem>
+                <MenuItem Header="Добавить вопрос" Click="MenuItem_Click"></MenuItem>
+                <MenuItem x:Name="QustionList" Header="Список вопросов" Click="QustionList_Click"></MenuItem>
+                <MenuItem x:Name="RedactQuestion" Header="Редактирование вопросов" Click="RedactQuestion_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Frame x:Name="MainFrame" Grid.Row="1" 
+               NavigationUIVisibility="Hidden">
+        </Frame>
+    </Grid>
+</Window>

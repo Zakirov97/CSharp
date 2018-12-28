@@ -1,0 +1,43 @@
+﻿<Window x:Class="Modul3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Modul3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <ScrollViewer VerticalScrollBarVisibility="Visible"
+                  Height="200" VerticalAlignment="Top">
+            <StackPanel>
+                <ListView x:Name="lvManuf">
+                    <ListView.View>
+                        <GridView>
+                            <GridView.Columns>
+                                <GridViewColumn Header="intEquipmentID" 
+                                                DisplayMemberBinding="{Binding Path=intEquipmentID}"/>
+                                <GridViewColumn Header="intGarageRoom"
+                                                DisplayMemberBinding="{Binding Path=intGarageRoom}"/>
+                                <GridViewColumn Header="intManufacturerID"
+                                                DisplayMemberBinding="{Binding Path=intManufacturerID}"/>
+                                <GridViewColumn Header="intModelID"
+                                                DisplayMemberBinding="{Binding Path=intModelID}"/>
+                                <GridViewColumn Header="strManufYear"
+                                                DisplayMemberBinding="{Binding Path=strManufYear}"/>
+                                <GridViewColumn Header="strManufYear"
+                                                DisplayMemberBinding="{Binding Path=strSerialNo}"/>
+                            </GridView.Columns>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </StackPanel>
+        </ScrollViewer>
+
+        <WrapPanel Height="40" Width="200" Margin="28,234,564,145">
+            <RadioButton IsEnabled="True" x:Name="ButtonSQL" Click="ButtonSQL_Click">SQL</RadioButton>
+            <RadioButton x:Name="ButtonAccess" Click="ButtonAccess_Click">ACCESS</RadioButton>
+        </WrapPanel>
+    </Grid>
+
+</Window>
